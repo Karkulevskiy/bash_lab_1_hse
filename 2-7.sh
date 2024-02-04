@@ -14,6 +14,7 @@ if [[ $userName == $help ]];then
 	echo "INSTRUCTIONS"
 	echo "param1 (write user name), param2(first sequence), param3(second sequence)"
 	echo "Exit codes: Error(-1), Success(0)"
+ 	echo "File users.csv will be saved with path: /home/users.csv"
 else	
 	#Handle error with exit code -1 if the arguments were wrong
 	if [ $first -gt $second ] || [ $first -lt 0 ] || [ $second -lt 0 ];then
